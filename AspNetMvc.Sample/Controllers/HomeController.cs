@@ -10,7 +10,12 @@ namespace AspNetMvc.Sample.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+            List<string> listUrls = new List<string>();
+            listUrls.Add("www.google.com");
+            listUrls.Add("www.bing.com");
+            listUrls.Add("www.yahoo.com");
+            listUrls.Add("www.msdn.com");
+            ViewBag.Urls = listUrls;
 
             return View();
         }
